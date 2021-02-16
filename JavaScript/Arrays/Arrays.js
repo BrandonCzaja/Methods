@@ -28,11 +28,32 @@ numbers.forEach((number) => {
 // Add item at end
 names.push("Martin");
 numbers.push(11);
-console.log(names);
-console.log(numbers);
+// console.log(names);
+// console.log(numbers);
 
-// Add item at end
+// Add item at front
 names.unshift("Sylvia");
 numbers.unshift(0);
+// console.log(names);
+// console.log(numbers);
+let newNumbers = [];
+for (let i = 1; i <= 10; i++) {
+    // Array starts at 10=>1
+    newNumbers.unshift(i);
+}
+for (let i = 1; i <= 10; i++) {
+    // Array starts at 1=>10
+    newNumbers.push(i);
+}
+// console.log(newNumbers);
+
+// Remove element from front
+names.shift();
 console.log(names);
+numbers.shift();
 console.log(numbers);
+
+// Remove element from end
+names.pop();
+numbers.pop();
+console.log(names, numbers);

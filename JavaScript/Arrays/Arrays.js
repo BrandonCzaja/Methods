@@ -49,11 +49,21 @@ for (let i = 1; i <= 10; i++) {
 
 // Remove element from front
 names.shift();
-console.log(names);
+// console.log(names);
 numbers.shift();
-console.log(numbers);
+// console.log(numbers);
 
 // Remove element from end
 names.pop();
 numbers.pop();
-console.log(names, numbers);
+// console.log(names, numbers);
+
+// Find index of element name
+// console.log(names.indexOf("Zach"));
+// console.log(numbers.indexOf(4));
+
+// Remove item by index position
+console.log(names);
+let replaced = names.splice(1, 3, "Sarah", "Tom", "Bill"); // Replacement: names.splice(index to start replacement, number of index to replace, values)
+let removed = names.splice(2, 1);
+console.log(names, replaced, removed);

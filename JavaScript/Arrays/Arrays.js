@@ -66,4 +66,17 @@ numbers.pop();
 console.log(names);
 let replaced = names.splice(1, 3, "Sarah", "Tom", "Bill"); // Replacement: names.splice(index to start replacement, number of index to replace, values)
 let removed = names.splice(2, 1);
-console.log(names, replaced, removed);
+// console.log(names, replaced, removed);
+
+// Remove items from an index position
+let vegetables = ["Cabbage", "Turnip", "Radish", "Carrot"];
+console.log(vegetables);
+let position = 1;
+let numberOfRemoved = 2;
+let removedItems = vegetables.splice(position, numberOfRemoved);
+console.log(`Remaining vegetables ${vegetables}`);
+console.log(`Removed items ${removedItems}`);
+
+// Make a copy
+let shallowCopy = names.slice();
+console.log(shallowCopy);

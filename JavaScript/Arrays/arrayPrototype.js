@@ -3,3 +3,6 @@
 // Note: Array.prototype does not refer to a single array, but to the Array() object itself
 
 // Note: Prototype is a global object constructor which is available for all JS objects.
+
+// Syntax
+Array.prototype.name = value;
